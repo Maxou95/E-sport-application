@@ -3,22 +3,22 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function League() {
-    const [ligues, setLigues] = useState([])
+    const [leagues, setleagues] = useState([])
 
     useEffect(() => {
-        const fetchLigues = async () => {
+        const fetchleagues = async () => {
             const res = await axios.get('https://api.pandascore.co/lol/leagues?token=HcmfRra2T1ClgJuxLoAvzYIaKEpKoYqhEsfCzOnLvtC6Vzrx5AU')
-            setLigues(res.data);
+            setleagues(res.data);
         }
-        fetchLigues();
+        fetchleagues();
     }, [])
 
     return (
         <div>
-            {ligues.map(ligue =>
-                <Link key={ligue.id} to={`/ligues/${ligue.id}`}>
-                    <img src={ligue.image_url}></img>
-                    <p>{ligue.name}</p>
+            {leagues.map(league =>
+                <Link key={league.id} to={`/leagues/${league.id}`}>
+                    <img src={league.image_url} id="img-league"></img>
+                    <p>{league.name}</p>
                 </Link>
             )}
         </div>

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Match extends Component{
 
@@ -22,14 +23,26 @@ class Match extends Component{
     render() {
         return(
             <div>
+
                 {this.state.matches.map(matche =>
-                    <div>
+                    <div style={{border:'1px solid black'}}>
                         <p>{matche.name}</p>
+
+                        {matche.opponents.map(opponent =>
+                            <Link key={opponent.opponent.id} to={`/equipe/${opponent.opponent.id}`}>
+                                <img src={opponent.opponent.image_url}></img>
+                            </Link>
+                        )}
+
+                        {matche.winner != null &&
+                        <p>Winner : {matche.winner.name}</p>
+                        }
+
+
                     </div>
                 )}
             </div>
         )
     }
 }
-
 export default Match;

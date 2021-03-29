@@ -9,11 +9,17 @@ import Match from './components/Match';
 function App() {
     return (
         <Router>
-
-            <ul className="navbar-nav mr-auto">
-                <li><Link to={'/'} className="nav-link"> Login </Link></li>
-                <li><Link to={'/leagues'} className="nav-link"> Leagues </Link></li>
-            </ul>
+            <header>
+                <div className="wrapper">
+                    <h1 className="logo">E<span>Sports</span></h1>
+                    <nav className="main-nav">
+                        <ul>
+                            <li><Link to={'/leagues'} className="nav-link"> Leagues </Link></li>
+                            <li><Link to={'/'} className="nav-link"> Inscription </Link></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
 
             <Switch>
                 <Route exact path='/'>
