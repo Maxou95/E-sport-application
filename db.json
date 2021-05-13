@@ -1,19 +1,19 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "email": "rougetmaxime0@gmail.com",
+      "password": "qwertyuiop"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "email": "aymeric.aouday@gmail.com",
+      "password": "azertyuiop"
+    },
+    {
+      "id": 3,
+      "email": "admin@gmail.com",
+      "password": "admin"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

@@ -1,3 +1,18 @@
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
 .App {
   text-align: center;
 }
@@ -174,6 +189,7 @@ form {
   border: 1px solid gray;
   width: 320px;
   height: 220px;
+  background-color: white;
   border-radius: 10px;
   margin: 50px auto;
 }
@@ -182,7 +198,7 @@ form {
   padding-left: 25px;
 }
 input#email {
-  margin-left: 51px;
+  margin-left: 78px;
   border: 1px solid gray;
   border-radius: 10px;
 }
@@ -229,4 +245,70 @@ button {
   to {
     transform: rotate(360deg);
   }
+}
+.lien-jeux{
+  color: black;
+  font-size: 15px;
+  font-weight: 200;
+  text-decoration: none;
+  margin-left: 10px;
+  text-align: center;
+}
+.titre-jeux{
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+.match{
+  width: 700px;
+  border:1px solid black;
+  background-color: white;
+  box-shadow: 10px 5px 5px white;
+  margin-top: 15px;
+  margin-left: 350px;
+}
+.title-match{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 900;
+}
+.vainqueur{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 900;
+}
+#img-equipe{
+  margin-left: 130px;
+}
+.nom-equipe{
+  text-align: center;
+  font-weight: 900;
+  font-size: 17px;
+}
+.equipe{
+  width: 700px;
+  border:1px solid black;
+  background-color: white;
+  box-shadow: 10px 5px 5px white;
+  margin-top: 15px;
+  margin-left: 350px;
+}
+.equipe-donnees {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ligue{
+  width: 700px;
+  border:1px solid black;
+  background-color: white;
+  box-shadow: 10px 5px 5px white;
+  margin-top: 15px;
+  margin-left: 350px;
+}
+.ligue-donnees {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
