@@ -2,12 +2,10 @@
   "users": [
     {
       "email": "rougetmaxime0@gmail.com",
-      "password": "$2a$10$vgWEiPRJWSNeSVRdsDNEyOqL32O/Uu7mfG8wO.3djE/w04iamCVHa",
+      "password": "$2a$10$00kcbXCrzdunHlrg5UtEk.UZy6nKnbs.QBKfrIvLm66BPe.QVR.Cy",
       "id": 4,
       "credit": 83,
       "favoris": [
-        4246,
-        4445,
         4246
       ],
       "bet": [

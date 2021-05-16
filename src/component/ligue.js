@@ -106,7 +106,7 @@ class Ligue extends Component{
                             </div>
                         )}
                     </div>
-                    <div style={{width:'100%', border: '2px solid black'}}></div>
+                    <div style={{width:'100%', border: '1px solid black'}}></div>
                     <div>
                         {this.state.ligues.map(ligue =>
                             <div className={"ligue"}>
