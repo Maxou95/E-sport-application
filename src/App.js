@@ -18,6 +18,7 @@ function App() {
                     <ul>
                         <li><Link to={'/'} className="nav-link"> Connexion </Link></li>
                         <li><Link to={'/home'} className="nav-link"> Liste des jeux </Link></li>
+                        <li>{}</li>
                     </ul>
                 </nav>
             </div>

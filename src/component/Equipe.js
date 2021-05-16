@@ -21,7 +21,6 @@ class Equipe extends Component{
   render() {
     return(
         <div>
-            
             {this.state.equipes.map(equipe =>
                 <div>
                     <p className={"nom-equipe"}>{equipe.name} ({equipe.acronym})</p>
@@ -31,10 +30,9 @@ class Equipe extends Component{
                             <img style={{width:100,height:100}} src={player.image_url}></img>
                                 <p>Nom : <span style={{fontWeight:900}}>{player.name}</span></p>
                                 <p>Nationalité : <span style={{fontWeight:900}}>{player.nationality}</span></p>
-                        </div>
+                            </div>
                         </div>
                     )}
-                    
                 </div>
             )}
         </div>

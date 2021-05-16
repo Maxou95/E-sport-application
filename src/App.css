@@ -312,3 +312,43 @@ button {
   justify-content: space-around;
   align-items: center;
 }
+.match-pari{
+  width: 700px;
+  border:1px solid black;
+  background-color: white;
+  box-shadow: 10px 5px 5px white;
+  margin-top: 15px;
+  margin-left: 350px;
+}
+.pari-donnees{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.somme-pari{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#input-pari{
+  background: white;
+  border: 1px solid gray;
+  border-radius: 15px;
+  width: 150px;
+  height: 25px;
+}
+.btn-verifier{
+  background: white;
+  border: 1px solid gray;
+  border-radius: 15px;
+  width: 150px;
+  height: 55px;
+  margin: 30px 85px;
+  color: black;
+  font-weight: 700;
+}
+.ligue-favori{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

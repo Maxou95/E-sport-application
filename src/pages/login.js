@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Home from '../component/home';
 import '../App.css';
+import jwt_decode from "jwt-decode";
 
 const App = () => {
     const [username, setUsername] = useState("");
@@ -18,13 +19,21 @@ const App = () => {
 
     const handleSubmit = async e => {
         e.preventDefault();
-        const reponse = await fetch('http://localhost:3003/users');
+
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: username, password: password })
+        };
+        const reponse = await fetch('http://localhost:3001/login', requestOptions);
         const data = await reponse.json();
-        for (let i = 0; i < data.length; i++) {
-            if(data[i].email == username && data[i].password == password){
-                setUser(data[i]);
-                localStorage.setItem("user", JSON.stringify(data[i]));
-            }
+        if(data.accessToken != null){
+            setUser(data.accessToken);
+            localStorage.setItem("user", JSON.stringify(data.accessToken));
+            localStorage.setItem("email", username);
+            localStorage.setItem("password", password);
+            var decoded = jwt_decode(data.accessToken);
+            localStorage.setItem("id", decoded.sub);
         }
     };
 

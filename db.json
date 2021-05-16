@@ -1,19 +1,27 @@
 {
   "users": [
     {
-      "id": 1,
       "email": "rougetmaxime0@gmail.com",
-      "password": "qwertyuiop"
-    },
-    {
-      "id": 2,
-      "email": "aymeric.aouday@gmail.com",
-      "password": "azertyuiop"
-    },
-    {
-      "id": 3,
-      "email": "admin@gmail.com",
-      "password": "admin"
+      "password": "$2a$10$vgWEiPRJWSNeSVRdsDNEyOqL32O/Uu7mfG8wO.3djE/w04iamCVHa",
+      "id": 4,
+      "credit": 83,
+      "favoris": [
+        4246,
+        4445,
+        4246
+      ],
+      "bet": [
+        {
+          "id_match": 593075,
+          "winner_id": "128995",
+          "mise": "2"
+        },
+        {
+          "id_match": 593074,
+          "winner_id": "128769",
+          "mise": "15"
+        }
+      ]
     }
   ]
 }
